@@ -1,0 +1,303 @@
+body {
+  margin: 0;
+}
+.exam-manager {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(247, 247, 247, 1);
+  border: 1px solid gray;
+  font-family: Roboto;
+}
+.exam-manager__nav {
+  display: flex;
+  
+  height: 44px;
+  align-items: center;
+  padding-left: 17px;
+}
+
+.exam-manager__nav-span1 {
+  color: rgba(57, 74, 102, 1);
+  font-size: 18px;
+  text-align: left;
+  font-family: Roboto-regular;
+  margin-right: 46px;
+  font-weight: bold;
+}
+
+.exam-manager__nav-span2 {
+  width: 61px;
+  height: 25px;
+  line-height: 24px;
+  border-radius: 5px;
+  background-color: rgba(41, 161, 247, 1);
+  color: rgba(255, 255, 255, 1);
+  font-size: 13px;
+  text-align: center;
+}
+.exam-manager__body {
+  display: flex;
+  padding-top: 7px;
+  margin-left: 17px;
+  margin-right: 11px;
+  flex-wrap: nowrap;
+}
+
+.exam-manager__left {
+  height: 600px;
+  width: 240px;
+  margin-right: 7px; 
+}
+
+.exam-manager__left-head {
+  width: 220px;
+  height: 50px;
+  line-height: 50px;
+  color: rgba(16, 16, 16, 0.8);
+  font-size: 16px;
+  text-align: left;
+  background-color: rgba(255, 255, 255, 1);
+  padding-left: 20px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.exam-manager__left-body {
+  background-color: rgba(247, 247, 247, 1);
+}
+
+.left__choose {
+  width: 238px;
+  height: 35px;
+  line-height: 45px;
+  color: rgba(140, 138, 138, 1);
+  font-size: 13px;
+  text-align: left;
+  font-family: SourceHanSansSC-regular;
+  background-color: rgba(255, 255, 255, 1);
+  padding-left: 2px;
+}
+
+.left__choose-radio,
+.left__choose-checkbox,
+.left__choose-logic {
+  width: 240px;
+  height: 48px;
+  line-height: 48px;
+  background-color: rgba(255, 255, 255, 1);
+  color: rgba(136, 133, 133, 1);
+  font-size: 13px;
+  text-align: center;
+  box-shadow: 0px 0px 0px 0px rgba(170, 170, 170, 1);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  cursor: pointer;
+}
+
+.left__choose--active {
+  background-color: rgba(247, 247, 247, 1);
+
+}
+
+.left__choose-radio-circle {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  background-color: rgba(91, 209, 215, 1);
+  color: rgba(255, 255, 255, 1);
+  font-size: 10px;
+  text-align: center;
+  display: inline-block;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.pure-color {
+  background-color: rgba(91, 114, 215, 1);
+}
+
+.green-color {
+  background-color: rgba(174, 215, 91, 1);
+}
+
+.left__choose-empty {
+  height: 421px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.exam-manager__right {
+  width: 100%;
+  height: 655px;
+  max-width: 680px;
+  line-height: 23px;
+  color: rgba(16, 16, 16, 1);
+  font-size: 16px;
+  text-align: left;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.right__search {
+  display: flex;
+  padding-top: 8px;
+  align-items: center;
+  padding-left: 8px;
+  padding-right: 15px;
+}
+
+.right__search-name {
+  display: flex;
+  padding-left: 10px;
+  font-family: SourceHanSansSC-regular;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.right__search-input {
+  width: 118px;
+  height: 25px;
+  color: rgba(136, 136, 136, 1);
+  font-size: 12px;
+  text-align: left;
+  font-family: Microsoft Yahei;
+  border: 1px solid rgba(187, 187, 187, 1);
+  padding-left: 5px;
+}
+
+.right__search-select {
+  width: 47px;
+  height: 25px;
+  color: rgba(16, 16, 16, 1);
+  font-size: 14px;
+  border: 1px solid rgba(187, 187, 187, 1);
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+ 
+   /*很关键：将默认的select选择框样式清除*/
+   appearance:none;
+   -moz-appearance:none;
+   -webkit-appearance:none;
+  
+   /*在选择框的最右侧中间显示小箭头图片*/
+   background: url("http://ourjs.github.io/static/2015/arrow.png") no-repeat scroll right center transparent;
+  
+   /*为下拉小箭头留出一点位置，避免被文字覆盖*/
+   padding-right: 14px;
+   padding-left: 5px;
+ 
+}
+
+.exam-manager__nav-btn {
+  width: 80px;
+  height: 25px;
+  line-height: 25px;
+  border-radius: 5px;
+  background-color: rgba(41, 161, 247, 1);
+  color: rgba(255, 255, 255, 1);
+  font-size: 14px;
+  text-align: center;
+}
+
+.more {
+  color: rgba(52, 148, 219, 1);
+  font-size: 12px;
+  align-self: flex-end;
+  font-family: Arial-regular;
+}
+.right__table {
+  padding-left: 8px;
+  padding-top: 17px;
+  padding-right: 15px;
+}
+.right__table table{
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+  border:0;
+}
+
+.right__table table thead {
+  background-color: rgba(247, 247, 247, 1);
+}
+
+table th,table td{
+  height: 30px;
+  line-height: 30px;
+  color: rgba(16, 16, 16, 1);
+  font-size: 13px;
+  font-family: SourceHanSansSC-regular;
+  text-align: center;
+
+}
+
+table th div{
+  margin: 10px 0;
+  border-right: 1px solid #D9D6D6;
+  display: inline-block;
+  width: 100%;
+}
+
+table th:last-child div{
+  border-right: none;
+}
+
+table tbody td p {
+  display:block;
+  white-space:nowrap; 
+  overflow:hidden; 
+  text-overflow:ellipsis;
+  width: 200px;
+}
+
+table tbody tr {
+  border-bottom: 1px solid #D9D6D6;
+}
+
+table th:nth-child(1),
+table td:nth-child(1) {
+  width: 13.2%;
+}
+table th:nth-child(2),
+table td:nth-child(2) {
+  width: 25.2%;
+}
+table th:nth-child(3),
+table td:nth-child(3) {
+  width: 10.2%;
+}
+table th:nth-child(4),
+table td:nth-child(4) {
+  width: 8.9%;
+}
+table th:nth-child(5),
+table td:nth-child(5) {
+  width: 10.2%;
+}
+table th:nth-child(6),
+table td:nth-child(6) {
+  width: 13.2%;
+}
+table th:nth-child(7), 
+table td:nth-child(7) {
+  width: 19.1%;
+}
+
+.exam-manager__action {
+
+}
+
+.exam-manager__action-view,
+.exam-manager__action-edit,
+.exam-manager__action-del {
+  color: rgba(41, 161, 247, 1);
+  font-size: 13px;
+  text-align: left;
+  font-family: SourceHanSansSC-regular;
+  cursor: pointer;
+}

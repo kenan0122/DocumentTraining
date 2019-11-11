@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="exam-manager.css"></link>
+  <script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
+  <script src="exam-manager.js"></script>
+</head>
+<body>
+  <div class="exam-manager">
+    <div class="exam-manager__nav">
+      <span class="exam-manager__nav-span1">考题管理</span>
+      <span class="exam-manager__nav-span2" onclick="jump('build')">+ 新增</span>
+    </div>
+    <div class="exam-manager__body">
+      <div class="exam-manager__left">
+        <div class="exam-manager__left-head">
+          考题类别
+        </div>
+        <div class="exam-manager__left-body"> 
+          <div class="left__choose">点击选择考题</div>
+          <div class="left__choose-radio radio" onclick="clickBtn('radio')">
+            单选题
+            <span class="left__choose-radio-circle">2</span>
+          </div>
+          <div class="left__choose-checkbox checkbox" onclick="clickBtn('checkbox')">
+            多选题
+            <span class="left__choose-radio-circle pure-color">2</span>
+          </div>
+          <div class="left__choose-logic logic" onclick="clickBtn('logic')">
+            判断题
+            <span class="left__choose-radio-circle green-color">2</span>
+          </div>
+          <div class="left__choose-empty">
+
+          </div>
+        </div>
+      </div>
+      <div class="exam-manager__right">
+        <div class="right__search">
+          <div class="right__search-name">
+            <span class="right__search-span">标签/名称：</span>
+            <input 
+              class="right__search-input" 
+              type="text" 
+              placeholder="请输入标题/名称" 
+              value="" />
+          </div>
+          <div class="right__search-name">
+            <span class="right__search-span">题干描述：</span>
+            <input 
+              class="right__search-input" 
+              type="text" 
+              placeholder="请输入题干描述" 
+              value="" />
+          </div>
+          <div class="right__search-name">
+            <span class="right__search-span">分值：</span>
+            <select name="select" class="right__search-select">
+              <option value="value1" selected>5</option> 
+              <option value="value2" >10</option>
+              <option value="value3">50</option>
+            </select>
+          </div>
+          <div class="right__search-name more">
+            <span class="right__search-span">更多&gt;</span>
+          </div>
+          <div class="right__search-name btn">
+            <span class="exam-manager__nav-btn">搜索</span>
+          </div>
+        </div>
+        <div class="right__table">
+          <table>
+            <thead>
+              <th>
+                <div>标签/名称</div>
+              </th>
+              <th>
+                <div>题干描述</div>
+              </th>
+              <th>
+                <div>考题类别</div>
+              </th>
+              <th><div>分值</div></th>
+              <th><div>创建人</div></th>
+              <th><div>创建时间</div></th>
+              <th><div>操作</div></th>
+            </thead>
+            <tbody>
+              <tr>
+                <td>入职、通勤</td>
+                <td><p>下列情况的缺勤属于旷工下列情况的缺勤属于旷工</p></td>
+                <td>单选题</td>
+                <td>5</td>
+                <td>刘秋森</td>
+                <td>2019-9-24</td>
+                <td>
+                  <div class="exam-manager__action">
+                    <span class="exam-manager__action-view">查看</span>
+                    <span class="exam-manager__action-edit">编辑</span>
+                    <span class="exam-manager__action-del">删除</span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                  <td>入职、通勤</td>
+                  <td><p>下列情况的缺勤属于旷工下列情况的缺勤属于旷工</p></td>
+                  <td>单选题</td>
+                  <td>5</td>
+                  <td>刘秋森</td>
+                  <td>2019-9-24</td>
+                  <td>
+                    <div class="exam-manager__action">
+                      <span class="exam-manager__action-view">查看</span>
+                      <span class="exam-manager__action-edit">编辑</span>
+                      <span class="exam-manager__action-del">删除</span>
+                    </div>
+                  </td>
+                </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
