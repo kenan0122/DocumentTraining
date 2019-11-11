@@ -1,0 +1,124 @@
+body {
+  margin: 0;
+}
+
+.edit-exam {
+  background-color: rgba(247, 247, 247, 1);
+}
+
+.edit-exam__body {
+  width: 904px;
+  height: 663px;
+  line-height: 23px;
+  color: rgba(16, 16, 16, 1);
+  font-size: 16px;
+  text-align: left;
+  font-family: Roboto;
+  margin: 12px 24px 47px;
+  background-color: rgba(255, 255, 255, 1);
+  border: solid 1px red;
+}
+
+.edit-exam__title {
+  text-align: center;
+  color: rgba(57, 74, 102, 1);
+  font-size: 20px;
+  font-family: Roboto-regular;
+  font-weight: bold;
+}
+
+.edit-exam__table {
+  padding: 10px 20px;
+}
+
+table {
+  width: 100%;
+  border-top: 1px solid rgba(217, 216, 216, 1);
+  border-left: 1px solid rgba(217, 216, 216, 1);
+}
+
+table td {
+  border-right: 1px solid rgba(217, 216, 216, 1);
+  border-bottom: 1px solid rgba(217, 216, 216, 1);
+}
+
+.edit-exam__table-desc {
+  text-align: center;
+}
+
+.edit-exam__table-select {
+  width: 94px;
+  height: 30px;
+  color: rgba(16, 16, 16, 1);
+  font-size: 14px;
+  font-family: Microsoft Yahei;
+  border: 1px solid rgba(187, 187, 187, 1);
+  margin: 10px 0 10px 20px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+
+.edit-exam__table-textarea {
+  width: 350px;
+  min-height: 50px;
+  line-height: 20px;
+  border-radius: 2px;
+  color: rgba(136, 136, 136, 1);
+  font-size: 14px;
+  text-align: left;
+  font-family: Microsoft Yahei;
+  border: 1px solid rgba(187, 187, 187, 1);
+  margin: 10px 0 10px 20px;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+.edit-exam__table-input {
+  width: 350px;
+  height: 30px;
+  border-radius: 2px;
+  color: rgba(136, 136, 136, 1);
+  font-size: 14px;
+  text-align: left;
+  font-family: Microsoft Yahei;
+  border: 1px solid rgba(187, 187, 187, 1);
+  margin: 10px 0 10px 20px;
+  padding-left: 10px;
+}
+
+.choose-btn {
+  cursor: pointer;
+}
+
+.style-order {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  border: solid 2px  #5677FC;
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  text-align: center;
+  margin: 10px 0 10px 20px;
+  background: #5677FC;
+  line-height: 18px;
+}
+
+em {
+  display: block;
+  text-align: center;
+  font-style: normal;
+  color: rgba(255, 255, 255, 1);
+  font-weight: bold;
+}
+
+.style-add {
+  color: rgba(136, 133, 133, 1);
+  font-size: 14px;
+  text-align: left;
+  font-family: SourceHanSansSC-regular;
+}

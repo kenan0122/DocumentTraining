@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="edit-exam.css"></link>
+  <script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
+</head>
+<body>
+  <div class="edit-exam">
+    <div class="edit-exam__body">
+      <p class="edit-exam__title">
+        编辑考题
+      </p>
+      <div class="edit-exam__table">
+        <table>
+          <tbody>
+            <tr>
+              <td>
+                <div class="edit-exam__table-desc">考题类别：</div>
+              </td>
+              <td>
+                <select id="subjectType" name="subjectType" class="edit-exam__table-select">
+                  <option value="value1" selected>单选题</option> 
+                  <option value="value2" >多选题</option>
+                  <option value="value3">判断题</option>
+                </select>
+              </td>
+              <td>
+                <div class="edit-exam__table-desc">分值：</div>
+              </td>
+              <td>
+                <select id="soreValue" name="soreValue" class="edit-exam__table-select">
+                  <option value="value4" selected>15</option> 
+                  <option value="value5" >10</option>
+                  <option value="value6">5</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="edit-exam__table-desc">题干描述：</div>
+              </td>
+              <td colspan="3">
+                <textarea  class="edit-exam__table-textarea" 
+                  placeholder="请输入题干描述">
+                </textarea >
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="edit-exam__table-desc"></div>
+              </td>
+              <td colspan="3">
+                <div id="addItem"> 
+                   
+                </div>
+                <div class="choose-btn" onclick="addItem">
+                  <span class="style-order">
+                    <em>+</em>
+                  </span>
+                  <span class="style-add">添加选项</span>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="edit-exam__table-desc">标签/名称：</div>
+              </td>
+              <td colspan="3">
+                <input type="text" value="" class="edit-exam__table-input" 
+                  placeholder="请输入标签/名称"/>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <script lang="JavaScript">
+    $(document).ready(function(){ 
+      // 选题类型: 默认select选中其中一个option的值 
+      $("#subjectType").find("option[value = 'value2']").attr("selected","selected");
+      // 分值
+      $("#soreValue").find("option[value = 'value6']").attr("selected","selected");
+    }) 
+
+    // 添加选项
+    function addItem() {
+      
+    }
+  </script>
+</body>
+</html>
